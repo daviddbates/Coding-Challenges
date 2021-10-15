@@ -1,0 +1,12 @@
+def sum_two_smallest_numbers(numbers):
+    index = 0
+    low1 = min(numbers)
+    for i in numbers:
+        if i != low1:
+            index += 1
+        else:
+            break
+    numbers.pop(index)
+    low2 = min(numbers)
+    sum = low1 + low2
+    return sum
