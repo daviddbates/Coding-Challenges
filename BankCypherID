@@ -1,0 +1,11 @@
+def solution(A):
+    listed = list(str(A))
+    newNum = ""
+    while len(listed) > 2:
+        newNum = newNum + listed.pop(0)
+        newNum = newNum + listed.pop(-1)
+    if len(listed) % 2 == 0:
+        newNum = newNum + listed[0] + listed[1]
+    else:
+        newNum = newNum + listed[0]
+    return newNum
