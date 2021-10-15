@@ -1,0 +1,6 @@
+def move_zeros(array):
+    zeroList = []
+    while 0 in array:
+        zeroList.append(0)
+        array.remove(0)
+    return array + zeroList
